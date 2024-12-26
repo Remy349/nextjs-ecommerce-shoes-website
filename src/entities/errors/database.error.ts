@@ -11,3 +11,9 @@ export class DBInternalServerError extends DatabaseError {
     super(message, options);
   }
 }
+
+export class DBConflictError extends DatabaseError {
+  constructor(message: string, options?: ErrorOptions) {
+    super(message, options);
+  }
+}

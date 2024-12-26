@@ -7,3 +7,5 @@ export type User = {
   role: Role;
   createdAt: Date;
 };
+
+export type CreateDTO = Pick<User, "email" | "password" | "role">;
