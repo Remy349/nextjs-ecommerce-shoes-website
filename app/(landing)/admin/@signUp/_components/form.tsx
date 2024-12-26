@@ -14,6 +14,8 @@ import { LoaderCircle } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { createUserAction } from "@/actions/user.action";
+import { toast } from "sonner";
 
 const FormSchema = z
   .object({
@@ -48,7 +50,19 @@ export const SignUpForm = () => {
   } = form;
 
   const onSubmit = async (formData: TFormSchema) => {
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    const actionResponse = await createUserAction({
+      email: formData.email,
+      password: formData.password,
+      role: "ADMIN",
+    });
+
+    if (actionResponse) {
+      if (!actionResponse.success) {
+        toast.error(actionResponse.message);
+      } else {
+        toast.success(actionResponse.message);
+      }
+    }
   };
 
   return (
