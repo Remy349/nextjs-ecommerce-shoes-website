@@ -2,6 +2,7 @@ import "@/app/globals.css";
 import type { Metadata } from "next";
 import { Header } from "./_components/header/header";
 import { font } from "@/lib/fonts";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: {
@@ -20,6 +21,7 @@ export default function LandingLayout({
       <body className={`${font.className} antialiased bg-muted/50`}>
         <Header />
         <main>{children}</main>
+        <Toaster position="top-center" richColors />
       </body>
     </html>
   );
