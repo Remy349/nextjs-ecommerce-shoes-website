@@ -1,4 +1,9 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -21,39 +26,40 @@ export default function Page() {
           <Card className="border-t-4 border-t-primary lg:row-span-2 lg:self-center">
             <CardHeader className="pb-4">
               <CardTitle className="text-xl">Teamwork</CardTitle>
+              <CardDescription>
+                We believe in the power of collaboration. Together, we create a
+                seamless shopping experience and ensure every detail is handled
+                with care.
+              </CardDescription>
             </CardHeader>
-            <CardContent className="text-muted-foreground">
-              We believe in the power of collaboration. Together, we create a
-              seamless shopping experience and ensure every detail is handled
-              with care.
-            </CardContent>
           </Card>
           <Card className="border-t-4 border-t-primary">
             <CardHeader className="pb-4">
               <CardTitle className="text-xl">Innovation</CardTitle>
+              <CardDescription>
+                Pushing boundaries is our mantra. We embrace fresh ideas to
+                offer cutting-edge solutions and stay ahead in the world of
+                ecommerce.
+              </CardDescription>
             </CardHeader>
-            <CardContent className="text-muted-foreground">
-              Pushing boundaries is our mantra. We embrace fresh ideas to offer
-              cutting-edge solutions and stay ahead in the world of ecommerce.
-            </CardContent>
           </Card>
           <Card className="border-t-4 border-t-primary lg:row-span-2 lg:self-center">
             <CardHeader className="pb-4">
               <CardTitle className="text-xl">Customer Commitment</CardTitle>
+              <CardDescription>
+                Your satisfaction drives us. We are dedicated to delivering
+                high-quality products and outstanding service every time.
+              </CardDescription>
             </CardHeader>
-            <CardContent className="text-muted-foreground">
-              Your satisfaction drives us. We are dedicated to delivering
-              high-quality products and outstanding service every time.
-            </CardContent>
           </Card>
           <Card className="border-t-4 border-t-primary lg:col-start-2">
             <CardHeader className="pb-4">
               <CardTitle className="text-xl">Vision</CardTitle>
+              <CardDescription>
+                We aim to redefine shoe shopping. Our vision is to connect
+                style, comfort, and convenience for customers everywhere.
+              </CardDescription>
             </CardHeader>
-            <CardContent className="text-muted-foreground">
-              We aim to redefine shoe shopping. Our vision is to connect style,
-              comfort, and convenience for customers everywhere.
-            </CardContent>
           </Card>
         </div>
       </div>
