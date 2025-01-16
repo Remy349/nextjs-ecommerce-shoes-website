@@ -36,7 +36,8 @@ export default function Page() {
                   <img
                     src="/bg-sign-in.jpg"
                     alt="Background image"
-                    width={900}
+                    className="h-full object-cover"
+                    width={500}
                     height={500}
                   />
                 </picture>

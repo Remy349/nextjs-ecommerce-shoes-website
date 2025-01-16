@@ -91,7 +91,7 @@ export const SignInForm = () => {
         <div className="text-center text-sm">
           Do not have an account?{" "}
           <Button className="font-medium p-0 underline" variant="link" asChild>
-            <Link href="">Create one</Link>
+            <Link href="/auth/sign-up">Create one</Link>
           </Button>
         </div>
       </form>

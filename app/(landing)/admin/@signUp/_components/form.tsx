@@ -49,7 +49,7 @@ export const SignUpForm = () => {
     formState: { isSubmitting },
   } = form;
 
-  const onSubmit = async (formData: TFormSchema) => {
+  const onSubmit = async (formData: Omit<TFormSchema, "confirmPassword">) => {
     const actionResponse = await createUserAction({
       email: formData.email,
       password: formData.password,
