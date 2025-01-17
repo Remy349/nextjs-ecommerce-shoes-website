@@ -21,7 +21,7 @@ export const MobileMenu = () => {
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <SheetTrigger asChild>
         <Button size="icon" className="size-8 md:hidden">
-          <Menu className="size-5" />
+          <Menu className="size-4" />
         </Button>
       </SheetTrigger>
       <SheetContent side="left">
